@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Лига ангелов</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  	<header class="main-header page-sections">
+   		<img class="main-header__logo" src="img/header/1_HEADER_logo.png" alt="Лига ангелов">
+			<img class="main-header__title" src="img/header/1_HEADER_head.png" alt="Возглавь армию">
+			<a class="main-header__btn btn" href="#">Играть</a>
+			<p class="main-header__text plain-text">Судьба планеты ангелов в твоих руках! Древнее зло вырвалось из глубины преисподней, и лишь вмешательство героя спасет этот мир!
+				Все зависит только от твоих решений!</p>
+			<a class="main-header__scroll scroll" href="#chars">Вниз</a>
+   	</header>
+   	<main>
+   		<section class="chars page-sections" id="chars">
+   			<span class="slider__arrow slider__arrow--left">Назад</span>
+				<span class="slider__arrow slider__arrow--right">Вперед</span>
+				<img class="slider__title" src="img/chars/2_CHARS_head.png" alt="Уникальные персонажи">
+   			<div class="slider">
+					<ul class="slide-wrap">
+	   				<li class="slide slide--1" id="isolda">
+							<div class="chars__description">
+								<h2 class="slide__title">
+									<img class="slide__img slide__img--isolda" src="img/chars/2_CHARS_name_Isolda.png" alt="Изольда">
+								</h2>
+								<p class="slide__fraction slide__fraction--isolda">Империя бессмертных</p>
+								<p class="slide__description">Появление королевы холода и ее верного медведя предвещает ледяная буря. Неуязвимая Изольда замораживает противников насмерть и не знает пощады.</p>
+								<div class="slide__skills slide__skills--winter skill">
+									<h3 class="skill__title">Конец зимы</h3>
+									<p class="skill__description">360% урона авангарду врага</p>
+								</div>
+								<div class="slide__skills slide__skills--aria skill">
+									<h3 class="skill__title">Морозная ария</h3>
+									<p class="skill__description">Ледяной щит уменьшает получаемый урон на 20%</p>
+								</div>
+							</div>
+							<div class="slider__navigation">
+								<a class="slider__link slider__link--isolda active">Изольда</a>
+								<a class="slider__link slider__link--pamela" href="#pamela">Памела</a>
+								<a class="slider__link slider__link--lleyn" href="#lleyn">Ллейн</a>
+							</div>
+	   				</li>
+	   				<li class="slide slide--2" id="pamela">
+							<div class="chars__description">
+								<h2 class="slide__title">
+									<img class="slide__img slide__img--pamela" src="img/chars/2_CHARS_name_Pamela.png" alt="Памела">
+									</h2>
+									<p class="slide__fraction">Союз просвященных</p>
+									<p class="slide__description">Памела — супруга древнего огненного дракона, одна из первых овладела магией. Никто не знает, на чьей стороне она сражается на самом деле.</p>
+									<div class="slide__skills slide__skills--black-breath skill">
+										<h3 class="skill__title">Черное дыхание</h3>
+										<p class="skill__description">Наносит врагу с мин. ОЗ 426% урона</p>
+									</div>
+									<div class="slide__skills slide__skills--dragon skill">
+										<h3 class="skill__title">Проклятие дракона</h3>
+										<p class="skill__description">Проклинает всех врагов, снижая урон на 15%</p>
+									</div>
+								</div>
+								<div class="slider__navigation">
+									<a class="slider__link slider__link--isolda" href="#isolda">Изольда</a>
+									<a class="slider__link slider__link--pamela active">Памела</a>
+									<a class="slider__link slider__link--lleyn" href="#lleyn">Ллейн</a>
+								</div>
+	   				</li>
+	   				<li class="slide slide--3" id="lleyn">
+							<div class="chars__description">
+								<h2 class="slide__title">
+									<img class="slide__img slide__img--lleyn" src="img/chars/2_CHARS_name_Lleyn.png" alt="Ллейн">
+								</h2>
+								<p class="slide__fraction">Цитадель небожителей</p>
+								<p class="slide__description">Зверолюд Ллейн выбрал кровавый путь наемного убийцы в тайной организации "Покров". Его прозвали “Дикий клинок” из-за жестокости и скорости.</p>
+								<div class="slide__skills slide__skills--cut skill">
+									<h3 class="skill__title">Дикий разрез</h3>
+									<p class="skill__description">Превращает 30% наносимого урона в ОЗ</p>
+								</div>
+								<div class="slide__skills slide__skills--destroy skill">
+									<h3 class="skill__title">Найти и уничтожить</h3>
+									<p class="skill__description">Наносит 313% урона врагу</p>
+								</div>
+							</div>
+							<div class="slider__navigation">
+								<a class="slider__link slider__link--isolda" href="#isolda">Изольда</a>
+								<a class="slider__link slider__link--pamela" href="#pamela">Памела</a>
+								<a class="slider__link slider__link--lleyn active">Ллейн</a>
+							</div>
+	   				</li>
+	   			</ul>
+   			</div>
+   			<p class="chars__text plain-text">60 наемников с неповторимой историей и сотни возможностей для построения команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий механизм настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!</p>
+   			<a class="chars__scroll scroll" href="#video">Вниз</a>
+   		</section>
+   		<section class="video page-sections" id="video">
+   			<h1 class="video__title">
+   				<img class="video__img" src="img/video/3_VIDEO_head.png" alt="Многочисленные события">
+   			</h1>
+   			<p class="video__text plain-text">Стань самым сильным в турнирах и накажи противников с других серверов в кросс-серверных сражениях.
+				Занимай места в PvP- и PvE-топах и получай эксклюзивные награды и доступ к магазинам для избранных!</p>
+				<a class="video__scroll scroll" href="#mount">Вниз</a>
+	   		<video autoplay loop poster="img/video/bg.jpg" class="video__video">
+	  			<source src="img/video/bg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+	  			<source src="img/video/bg.webm" type='video/webm; codecs="vp8, vorbis"' />
+				</video>>
+   		</section>
+   		<section class="mount page-sections" id="mount">
+   			<h1 class="mount__title">
+   				<img class="mount__pic" src="img/mount/4_MOUNT_head.png" alt="Прокачка">
+   			</h1>
+   			<div class="mount__ranges">
+   				<img class="mount__range-img mount__range--30" src="img/mount/4_MOUNT_rating_30000.png">
+   				<div class="mount__range mount__range--level">1 уровень</div>
+   			</div>
+   			<div class="mount__ranges">
+   				<img class="mount__range-img mount__range--150" src="img/mount/4_MOUNT_rating_150000.png">
+   				<div class="mount__range mount__range--level">50 уровень</div>
+   			</div>
+   			<p class="mount__text plain-text">Пройди десятки элитных данжей, собери крепкие доспехи и сильнейшее оружие и приручи верных маунтов. Добывай ценные ресурсы для максимальной прокачки снаряжения и отряда: развивай скиллы, применяй древние кодексы и собирай уникальные комбинации!
+				Выработай свою стратегию боя и выбери ключевые умения для победы над врагами!</p>
+				<a class="mount__scroll scroll" href="#footer">Вниз</a>
+   		</section>
+   	</main>
+   	<footer class="main-footer page-sections" id="footer">
+   		<h1 class="main-footer__title">
+   			<img class="main-footer__pic" src="img/footer/5_FOOTER_head.png" alt="Сражаться">
+   		</h1>
+   		<a class="main-footer__link btn">Играть</a>
+			<p class="main-footer__text">Поделись страницей в социальной сети</p>
+			<div class="main-footer__socials">
+				<a class="main-footer__social main-footer__social--fb">Facebook</a>
+				<a class="main-footer__social main-footer__social--vk">Вконтакте</a>
+				<a class="main-footer__social main-footer__social--ok">Одноклассники</a>
+				<a class="main-footer__social main-footer__social--mail">Мэйл.ру</a>
+			</div>
+			<p class="main-footer__agreement">Нажимая кнопку “Играть”, вы подтверждаете, что принимаете условия <br /> Пользовательского соглашения и Политики приватности.</p>
+			<a class="main-footer__logo" href="#"></a>
+   	</footer>
+  </body>
+  <script src="js/carousel.js"></script>
+</html>
