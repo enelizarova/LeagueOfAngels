@@ -6,7 +6,8 @@
       <title>Лига ангелов</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
   </head>
   <body>
   	<header class="main-header page-sections">
@@ -19,11 +20,14 @@
    	</header>
    	<main>
    		<section class="chars page-sections" id="chars">
-   			<span class="slider__arrow slider__arrow--left">Назад</span>
-				<span class="slider__arrow slider__arrow--right">Вперед</span>
 				<img class="slider__title" src="img/chars/2_CHARS_head.png" alt="Уникальные персонажи">
    			<div class="slider">
-					<ul class="slide-wrap">
+   			<script>
+							jQuery(document).ready(function(){
+  							$('.bxslider').bxSlider();
+							});
+						</script>
+ 					<ul class="slide-wrap bxslider">
 	   				<li class="slide slide--1" id="isolda">
 							<div class="chars__description">
 								<h2 class="slide__title">
@@ -39,11 +43,6 @@
 									<h3 class="skill__title">Морозная ария</h3>
 									<p class="skill__description">Ледяной щит уменьшает получаемый урон на 20%</p>
 								</div>
-							</div>
-							<div class="slider__navigation">
-								<a class="slider__link slider__link--isolda active">Изольда</a>
-								<a class="slider__link slider__link--pamela" href="#pamela">Памела</a>
-								<a class="slider__link slider__link--lleyn" href="#lleyn">Ллейн</a>
 							</div>
 	   				</li>
 	   				<li class="slide slide--2" id="pamela">
@@ -62,11 +61,6 @@
 										<p class="skill__description">Проклинает всех врагов, снижая урон на 15%</p>
 									</div>
 								</div>
-								<div class="slider__navigation">
-									<a class="slider__link slider__link--isolda" href="#isolda">Изольда</a>
-									<a class="slider__link slider__link--pamela active">Памела</a>
-									<a class="slider__link slider__link--lleyn" href="#lleyn">Ллейн</a>
-								</div>
 	   				</li>
 	   				<li class="slide slide--3" id="lleyn">
 							<div class="chars__description">
@@ -84,13 +78,9 @@
 									<p class="skill__description">Наносит 313% урона врагу</p>
 								</div>
 							</div>
-							<div class="slider__navigation">
-								<a class="slider__link slider__link--isolda" href="#isolda">Изольда</a>
-								<a class="slider__link slider__link--pamela" href="#pamela">Памела</a>
-								<a class="slider__link slider__link--lleyn active">Ллейн</a>
-							</div>
 	   				</li>
 	   			</ul>
+					</div>
    			</div>
    			<p class="chars__text plain-text">60 наемников с неповторимой историей и сотни возможностей для построения команды ждут тебя! Система связей между персонажами — важная часть игрового сюжета и тонкий механизм настройки боевого отряда. Выбери свою фракцию и получай бонусы к мощи!</p>
    			<a class="chars__scroll scroll" href="#video">Вниз</a>
@@ -112,11 +102,11 @@
    				<img class="mount__pic" src="img/mount/4_MOUNT_head.png" alt="Прокачка">
    			</h1>
    			<div class="mount__ranges">
-   				<img class="mount__range-img mount__range--30" src="img/mount/4_MOUNT_rating_30000.png" alt="30">
+   				<img class="mount__range-img mount__range--30" src="img/mount/4_MOUNT_rating_30000.png">
    				<div class="mount__range mount__range--level">1 уровень</div>
    			</div>
    			<div class="mount__ranges">
-   				<img class="mount__range-img mount__range--150" src="img/mount/4_MOUNT_rating_150000.png" alt="150">
+   				<img class="mount__range-img mount__range--150" src="img/mount/4_MOUNT_rating_150000.png">
    				<div class="mount__range mount__range--level">50 уровень</div>
    			</div>
    			<p class="mount__text plain-text">Пройди десятки элитных данжей, собери крепкие доспехи и сильнейшее оружие и приручи верных маунтов. Добывай ценные ресурсы для максимальной прокачки снаряжения и отряда: развивай скиллы, применяй древние кодексы и собирай уникальные комбинации!
@@ -139,6 +129,5 @@
 			<p class="main-footer__agreement">Нажимая кнопку “Играть”, вы подтверждаете, что принимаете условия <br /> Пользовательского соглашения и Политики приватности.</p>
 			<a class="main-footer__logo" href="#"></a>
    	</footer>
-   	<script src="js/carousel.js"></script>
   </body>
 </html>
